@@ -1,0 +1,35 @@
+{
+  "name": "your-token",
+  "version": "1.0.0",
+  "description": "Your Token - ERC20 Implementation",
+  "main": "index.js",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "keywords": [
+    "baboons",
+    "erc20",
+    "token",
+    "contract",
+    "core",
+    "solidity",
+    "evm",
+    "yourtoken",
+    "your"
+  ],
+  "author": "Your Token",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^5.0.1",
+    "chai": "^4.4.1",
+    "dotenv": "^16.3.1",
+    "ethereum-waffle": "^4.0.10",
+    "hardhat-waffle": "^0.0.1-security"
+  }
+}
