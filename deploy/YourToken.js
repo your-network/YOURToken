@@ -21,7 +21,6 @@ async function main() {
   if (contractDeployer1.waitForDeployment()) {
     console.log("ERC20 Token Deployed :", await contractDeployer1.getAddress());
   }
-
 }
 
 main()

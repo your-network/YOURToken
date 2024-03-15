@@ -25,8 +25,8 @@ contract YourToken is ERC20, ERC20Burnable, ERC20Pausable, AccessControl, ERC20P
      * @param initialOwner The initial owner who receives the initial token supply.
      */
     constructor(address defaultAdmin, address initialOwner)
-        ERC20("YOUR token", "YOUR")
-        ERC20Permit("YOUR token")
+        ERC20("YOUR AI", "YOURAI")
+        ERC20Permit("YOUR AI")
     {
         // Validate that initialOwner and defaultAdmin are not the zero address
         require(initialOwner != address(0), "Initial owner cannot be the zero address");
