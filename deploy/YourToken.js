@@ -10,13 +10,7 @@ async function main() {
   console.log("Network name                         :", network.name);
   console.log("Network chain id                     :", network.chainId);
 
-  const adminAddress = "0x3Ec5faF545030cdE1f3D887F876061e0B0Ffa1a0";
-  const tokenHoldingAddress = "0x3Ec5faF545030cdE1f3D887F876061e0B0Ffa1a0";
-
-  const contractDeployer1 = await ethers.deployContract("YourToken", [
-    adminAddress, // Initial Admin
-    tokenHoldingAddress, // Initial Owner holding all tokens
-  ]);
+  const contractDeployer1 = await ethers.deployContract("YourToken");
 
   if (contractDeployer1.waitForDeployment()) {
     console.log("ERC20 Token Deployed :", await contractDeployer1.getAddress());
